@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/*mobile first */
+
+/*variaveis*/
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    border: 2px solid red;
+    width: calc(100vw -1);
+    height: calc(100vh -1);
+    background-image: url('../img/pexels_img0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    display: block;
+    border: 2px solid blue;
+    width: 99,9%;
+    height: 80%;
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+    width: 250px;
+    height: 515px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.589);
+   
+}
+
+#img {
+    border: 2px solid green;
+    background-image: url('../img/pexels_img1.jpg') ;
+    height: 200px;
+
+    background-position: center, bottom;
+    background-size: cover;
+    border-radius: 10px ;
+   
+}
+
+form {
+    border: 2px solid yellow;
+    padding: 10px;
+    border-radius: 10px;
+
+    background-image: url('../img/pexels_img1.jpg');
+
+    background-position: center bottom;
+    color: white;
+   
+}
+
+#titulo00 {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 6px;
+    margin: 20px 0px 7px 0px;
+}
+
+label {
+    font-size: 0.8em;
+}
+
+input{
+   border: none;
+   border-radius: 3px;
+   padding-left: 3px;
+}
+
+#submit {
+    background-color: rgb(90, 241, 85);
+    padding: 5px;
+    margin-top: 10px;
+    width: 80px;
+    
+}
+
+#submit:hover {
+    background-color: rgb(30, 134, 26);
+    cursor: pointer;
+}
+
+#reset {
+    background-color: rgb(218, 53, 53);
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 80px;
+}
+
+#reset:hover {
+    background-color: rgb(134, 27, 27);
+    cursor: pointer;
+}
