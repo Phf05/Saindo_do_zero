@@ -21,10 +21,25 @@
                 <br>
                 <input type="password" id="senha">
                 <br>
-                <input type="submit" value="Logar" id="submit">
-                <input type="reset" value="Limpar" id="reset">
+                <input type="button" value="Logar" id="submit" onclick="mostrar_resultado()">
+                <input type="reset" value="Limpar" id="reset" >
             </form>
         </div>
+
+        <footer id="footer">Ben-Vindo(a) usuario <p id="p00"></p></footer>
+        <pi id="p"></p>
     </main>
 </body>
+<script>
+    var email = window.document.getElementById('@')
+    var botao = window.document.getElementById('submit')
+    
+    function mostrar_resultado() {
+        window.document.getElementById('p00').innerHTML = email.value
+
+        window.document.getElementById('footer').style.display = 'block'
+    }
+
+
+</script>
 </html>
