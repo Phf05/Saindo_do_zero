@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <main>
@@ -15,29 +16,69 @@
                 <h4>entrar na sua conta</h4>
                 <label for="@">Email:</label>
                 <br>
-                <input type="email" id="@">
+                <input type="email" id="@" minlength="5" maxlength="18">
                 <br>
                 <label for="senha">Senha:</label>
                 <br>
-                <input type="password" id="senha">
+                <input type="password" id="senha" minlength="8" maxlength="15">
                 <br>
                 <input type="button" value="Logar" id="submit" onclick="mostrar_resultado()">
                 <input type="reset" value="Limpar" id="reset" >
             </form>
         </div>
 
-        <footer id="footer">Ben-Vindo(a) usuario <p id="p00"></p></footer>
+        <footer id="footer">Ben-Vindo(a) usuario <br>
+        <strong> 
+        
+        <p id="p00" style="text-decoration: underline;"></p>
+        <span class="material-symbols-outlined" id="icon_usuario">person</span>
+        </strong></footer>
         <pi id="p"></p>
     </main>
 </body>
 <script>
     var email = window.document.getElementById('@')
     var botao = window.document.getElementById('submit')
-    
-    function mostrar_resultado() {
-        window.document.getElementById('p00').innerHTML = email.value
+    var senha = window.document.getElementById('senha')
 
-        window.document.getElementById('footer').style.display = 'block'
+    var senha_ok, email_ok
+
+
+    function mostrar_resultado() {
+        if (senha.value.length < 8)
+        {
+            window.alert('[Senha Muita Curta], Minimo 8 Digitos!')
+            senha_ok = false
+        }
+
+        else 
+        {
+            senha_ok = true
+        }
+
+        if (email.value.length <5)
+
+        {
+            window.alert('[Email Invalido], deve ter pelo menos 5 caracteries !')
+            email_ok = false
+        }
+
+        else 
+        {
+            email_ok = true
+        }
+
+        if (senha_ok && email_ok)
+        {
+            window.document.getElementById('p00').innerHTML = email.value
+            window.document.getElementById('footer').style.display = 'block'
+
+        }
+        
+        else 
+        {
+            window.document.getElementById('p00').innerHTML = '[Erro]'
+        }
     }
 
 
