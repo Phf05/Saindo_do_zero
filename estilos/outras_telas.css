@@ -1,0 +1,71 @@
+@charset "Utf-8";
+
+
+/*tablet*/
+@media screen and (min-width: 700px) and (max-width: 991px)  {
+    main {
+        background-color: rgb(209, 219, 67);
+        width: 500px;
+        height: 508px;
+        font-size:1.2em ;
+       
+    }
+
+    #img{
+        background-position: top center;
+    }
+
+    .icones > #img0 {
+        display: none;
+    }
+
+    .icones > #img1 {
+        display: block;
+    }
+
+    .icones > #img2 {
+        display: none;
+    }
+
+}
+
+/*Pc*/
+@media screen and (min-width: 992px) {
+    main {
+        background-color: rgb(218, 40, 76);
+        width: 700px;
+        height: 560px;
+        font-size: 1.5em;
+    }
+
+    #img{
+        background-position: top center;
+        background-repeat: no-repeat;
+        
+    }
+
+    form {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .icones {
+        bottom: 63%;
+    }
+
+    .icones > #img0 {
+        display: block;
+    }
+
+    .icones > #img1 {
+        display: none;
+    }
+
+    .icones > #img2 {
+        display: none;
+    }
+
+   
+
+   
+}

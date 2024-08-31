@@ -12,7 +12,7 @@
 
 body {
     width: calc(100vw -1);
-    height: calc(100vh -1);
+    height: 675px;
     background-image: url('../img/pexels_img0.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,9 +20,7 @@ body {
 
 main {
     display: block;
-    width: 99,9%;
-    height: 80%;
-    width: 40%;
+   
     margin: auto;
     margin-top: 30px;
     width: 250px;
@@ -120,4 +118,19 @@ footer  p {
     top: 3px;
     padding: 1px;
     background-color: rgb(44, 41, 41);
+}
+
+.icones {
+    position: relative;
+    bottom: 55%;
+    margin-left: 30%;
+
+}
+
+.icones > #img0 {
+    display: none;
+}
+
+.icones > #img1 {
+    display: none;
 }
