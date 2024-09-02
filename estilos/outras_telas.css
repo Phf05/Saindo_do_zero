@@ -21,6 +21,7 @@
 
     .icones > #img1 {
         display: block;
+        width: 30px;
     }
 
     .icones > #img2 {
@@ -49,12 +50,10 @@
         background-size: cover;
     }
 
-    .icones {
-        bottom: 63%;
-    }
-
     .icones > #img0 {
         display: block;
+        width: 40px;
+        
     }
 
     .icones > #img1 {
