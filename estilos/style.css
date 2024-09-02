@@ -12,7 +12,7 @@
 
 body {
     width: calc(100vw -1);
-    height: 675px;
+    height: 100vh;
     background-image: url('../img/pexels_img0.jpg');
     background-repeat: no-repeat;
     background-size: cover;
