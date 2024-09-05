@@ -23,11 +23,12 @@
                 <h4>entrar na sua conta</h4>
                 <label for="@">Email:</label>
                 <br>
-                <input type="email" id="@" minlength="5" maxlength="18">
+                <input type="email" id="@" minlength="5" maxlength="18" placeholder="******@gmail.com" >
+
                 <br>
                 <label for="senha">Senha:</label>
                 <br>
-                <input type="password" id="senha" minlength="8" maxlength="15">
+                <input type="password" id="senha" minlength="8" maxlength="15" placeholder="min 8 caracteries">
                 <br>
                 <input type="button" value="Logar" id="submit" onclick="mostrar_resultado()">
                 <input type="reset" value="Limpar" id="reset" >
@@ -54,21 +55,10 @@
 
 
     function mostrar_resultado() {
-        if (senha.value.length < 8)
-        {
-            window.alert('[Senha Muita Curta], Minimo 8 Digitos!')
-            senha_ok = false
-        }
-
-        else 
-        {
-            senha_ok = true
-        }
-
-        if (email.value.length <5)
-
-        {
-            window.alert('[Email Invalido], deve ter pelo menos 5 caracteries !')
+        if(email.value.indexOf('@gmail.com') == -1  || email.value.length <5)
+        {   
+            
+            window.alert('Aqui um Email valido deve conter ******@gmail.com e pelo menos 5 caracteries')
             email_ok = false
         }
 
@@ -76,6 +66,19 @@
         {
             email_ok = true
         }
+
+
+        if (senha.value.length < 8)
+            {
+                window.alert('[Senha Muita Curta], Minimo 8 Digitos!')
+                senha_ok = false
+            }
+
+        else 
+            {
+            senha_ok = true
+            }
+       
 
         if (senha_ok && email_ok)
         {
